@@ -7,15 +7,16 @@ export const StyledButton = styled("button", {
   _hover: {
     opacity: 0.8,
     background: "$primary",
-    broderRadius: 10,
+    borderRadius: 10,
+    color: "white",
   },
-  //   position: "relative",
   _after: {
     h: "100%",
     w: [10, 4],
     background: "red",
     ...absYCenter({ right: 0 }),
   },
+
   variants: {
     size: {
       full: {
@@ -47,8 +48,18 @@ export const StyledButton = styled("button", {
         },
       },
     },
-    defaultVariants: {
-      shape: "rect",
+  },
+
+  compoundVariants: [
+    {
+      size: "big",
+      shape: "round",
+      css: {
+        background: "$gray200",
+      },
     },
+  ],
+  defaultVariants: {
+    shape: "rect",
   },
 });
