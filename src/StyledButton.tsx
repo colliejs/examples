@@ -10,6 +10,7 @@ export const StyledButton = styled("button", {
     borderRadius: 10,
     color: "white",
   },
+
   _after: {
     h: "100%",
     w: [10, 4],
