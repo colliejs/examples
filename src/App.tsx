@@ -5,6 +5,7 @@ function App() {
     <div>
       <StyledButton>Button</StyledButton>
       <StyledButton size="full">Button</StyledButton>
+      <StyledButton>Button</StyledButton>
     </div>
   );
 }

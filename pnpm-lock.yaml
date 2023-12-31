@@ -15,8 +15,8 @@ dependencies:
     specifier: ^1.0.31
     version: 1.0.31
   '@colliejs/react':
-    specifier: ^1.0.80
-    version: 1.0.80(@colliejs/core@1.0.31)(@colliejs/transform@1.0.56)
+    specifier: ^1.0.81
+    version: 1.0.81(@colliejs/core@1.0.31)(@colliejs/transform@1.0.56)
   '@colliejs/vite':
     specifier: ^1.0.92
     version: 1.0.92(@colliejs/config@1.0.2)(@colliejs/core@1.0.31)(@colliejs/shared@1.0.11)(@colliejs/transform@1.0.56)
@@ -1436,8 +1436,8 @@ packages:
       '@c3/utils': 1.3.26
     dev: false
 
-  /@colliejs/react@1.0.80(@colliejs/core@1.0.31)(@colliejs/transform@1.0.56):
-    resolution: {integrity: sha512-HwUZM+Qu6ZW42m4slv+VqDBevAv862KS1Pkkk/gMbKhxeD43SpF2/mC2A6Xu2gfQ8PhQhIU4+amX9mDo4aEQ9A==}
+  /@colliejs/react@1.0.81(@colliejs/core@1.0.31)(@colliejs/transform@1.0.56):
+    resolution: {integrity: sha512-Nv12Qor3V8J52/a7U7YO2rIedw+OG/3MUoDn4Bb1NO/qQe8M5NDA1IwQ9P/jm1oYGrMENqtx799IcgsqJ7LKhw==}
     peerDependencies:
       '@colliejs/core': ^1.0.31
       '@colliejs/transform': ^1.0.56
