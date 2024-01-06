@@ -9,17 +9,17 @@ dependencies:
     specifier: ^1.0.17
     version: 1.0.17
   '@colliejs/config':
-    specifier: ^1.0.2
-    version: 1.0.2
+    specifier: ^1.0.3
+    version: 1.0.3
   '@colliejs/core':
-    specifier: ^1.0.31
-    version: 1.0.31
+    specifier: ^1.0.32
+    version: 1.0.32
   '@colliejs/react':
-    specifier: ^1.0.81
-    version: 1.0.81(@colliejs/core@1.0.31)(@colliejs/transform@1.0.56)
+    specifier: ^1.0.82
+    version: 1.0.82(@colliejs/config@1.0.3)(@colliejs/core@1.0.32)(@colliejs/transform@1.0.56)
   '@colliejs/vite':
-    specifier: ^1.0.92
-    version: 1.0.92(@colliejs/config@1.0.2)(@colliejs/core@1.0.31)(@colliejs/shared@1.0.11)(@colliejs/transform@1.0.56)
+    specifier: ^1.0.93
+    version: 1.0.93(@colliejs/config@1.0.3)(@colliejs/core@1.0.32)(@colliejs/shared@1.0.11)(@colliejs/transform@1.0.56)
   lodash:
     specifier: ^4.17.21
     version: 4.17.21
@@ -1423,39 +1423,41 @@ packages:
       '@collie-ui/common': 1.0.13
     dev: false
 
-  /@colliejs/config@1.0.2:
-    resolution: {integrity: sha512-3FyacQE9Wr4gxQCFhfUrZxPdN7VGJExMmPZEDNhLNaMWEDkhH4sj1w3VDjWkaTlVjlBgo/TrA6/0P4q4cK4zgw==}
+  /@colliejs/config@1.0.3:
+    resolution: {integrity: sha512-kx0/Y5sHWgq4Ehtvjznrj3Xubhi2FWbCDZV7mIm3aJ3aQJn46YpwU1DWi+7dbJEd9rwvbFHg3F0tY71Fiozzug==}
     dependencies:
-      '@colliejs/core': 1.0.31
+      '@colliejs/core': 1.0.32
     dev: false
 
-  /@colliejs/core@1.0.31:
-    resolution: {integrity: sha512-ybj3HSwttsenDyh1o/QYNIbG5V1UFEYOWYpAwzLHAFSH3mcBKfXvRLSrt6MyF5/alFeL/6bY1uRL013Q56s1Iw==}
+  /@colliejs/core@1.0.32:
+    resolution: {integrity: sha512-PW5H6Mguai0UL1ZrSbn8xTuxye6n+MtEBN6Zkce6hZu7Xw7ujEHfrXKbYTlNQwbzQhESh3fSyMbZIU3vvaJjdA==}
     dependencies:
       '@c3/css': 2.0.3
       '@c3/utils': 1.3.26
     dev: false
 
-  /@colliejs/react@1.0.81(@colliejs/core@1.0.31)(@colliejs/transform@1.0.56):
-    resolution: {integrity: sha512-Nv12Qor3V8J52/a7U7YO2rIedw+OG/3MUoDn4Bb1NO/qQe8M5NDA1IwQ9P/jm1oYGrMENqtx799IcgsqJ7LKhw==}
+  /@colliejs/react@1.0.82(@colliejs/config@1.0.3)(@colliejs/core@1.0.32)(@colliejs/transform@1.0.56):
+    resolution: {integrity: sha512-1vd4qSpTHr2XjPqTPNEjDo51SZwDI862ZLKlyVwgvtYbIPXp1aT7mNcxSgZFa7cvxE8B5ZuvyrCzXlYvO//jDA==}
     peerDependencies:
-      '@colliejs/core': ^1.0.31
+      '@colliejs/config': ^1.0.3
+      '@colliejs/core': ^1.0.32
       '@colliejs/transform': ^1.0.56
     dependencies:
-      '@colliejs/core': 1.0.31
-      '@colliejs/transform': 1.0.56(@colliejs/config@1.0.2)(@colliejs/core@1.0.31)(@colliejs/shared@1.0.11)
+      '@colliejs/config': 1.0.3
+      '@colliejs/core': 1.0.32
+      '@colliejs/transform': 1.0.56(@colliejs/config@1.0.3)(@colliejs/core@1.0.32)(@colliejs/shared@1.0.11)
     dev: false
 
-  /@colliejs/shared@1.0.11(@colliejs/core@1.0.31):
+  /@colliejs/shared@1.0.11(@colliejs/core@1.0.32):
     resolution: {integrity: sha512-QF46XJunP/Z4UHOFgrPlCAoEYMrrb8ajHJLN88FVgjhRlniS0a06VI77KHyl/fKvq43bYaMXTo0r8nP/kRd39w==}
     peerDependencies:
       '@colliejs/core': ^1.0.31
     dependencies:
       '@c3/utils': 1.3.26
-      '@colliejs/core': 1.0.31
+      '@colliejs/core': 1.0.32
     dev: false
 
-  /@colliejs/transform@1.0.56(@colliejs/config@1.0.2)(@colliejs/core@1.0.31)(@colliejs/shared@1.0.11):
+  /@colliejs/transform@1.0.56(@colliejs/config@1.0.3)(@colliejs/core@1.0.32)(@colliejs/shared@1.0.11):
     resolution: {integrity: sha512-d2a2rq8/BJon475aF0CDN/JLYX20CKVXT7hdA4xCuRI7BiJfd/gqqLA03NtSu4Sqj0SRmUHcbHWBuHfPnqzCGw==}
     peerDependencies:
       '@colliejs/config': ^1.0.2
@@ -1464,24 +1466,24 @@ packages:
     dependencies:
       '@c3/css': 2.0.3
       '@c3/utils': 1.3.26
-      '@colliejs/config': 1.0.2
-      '@colliejs/core': 1.0.31
-      '@colliejs/shared': 1.0.11(@colliejs/core@1.0.31)
+      '@colliejs/config': 1.0.3
+      '@colliejs/core': 1.0.32
+      '@colliejs/shared': 1.0.11(@colliejs/core@1.0.32)
       lodash-es: 4.17.21
     dev: false
 
-  /@colliejs/vite@1.0.92(@colliejs/config@1.0.2)(@colliejs/core@1.0.31)(@colliejs/shared@1.0.11)(@colliejs/transform@1.0.56):
-    resolution: {integrity: sha512-MJFDU+Q2RroSXRz9IUY2531K3yS5UfKNtf21h+jECFS2A+2oPPJYArtPwXyJjKMgZRKT2q6lN4CmbbJHFHH6Gw==}
+  /@colliejs/vite@1.0.93(@colliejs/config@1.0.3)(@colliejs/core@1.0.32)(@colliejs/shared@1.0.11)(@colliejs/transform@1.0.56):
+    resolution: {integrity: sha512-Q8vLW+lECq+PBu4NAlE+q3loffTjxzsZpqzXTWyIkLBhQxDfsy78GNHLfdg1zHZU24HRXKPLI6+Gm2jcBBiruw==}
     peerDependencies:
-      '@colliejs/config': ^1.0.2
-      '@colliejs/core': ^1.0.31
+      '@colliejs/config': ^1.0.3
+      '@colliejs/core': ^1.0.32
       '@colliejs/shared': ^1.0.11
       '@colliejs/transform': ^1.0.56
     dependencies:
-      '@colliejs/config': 1.0.2
-      '@colliejs/core': 1.0.31
-      '@colliejs/shared': 1.0.11(@colliejs/core@1.0.31)
-      '@colliejs/transform': 1.0.56(@colliejs/config@1.0.2)(@colliejs/core@1.0.31)(@colliejs/shared@1.0.11)
+      '@colliejs/config': 1.0.3
+      '@colliejs/core': 1.0.32
+      '@colliejs/shared': 1.0.11(@colliejs/core@1.0.32)
+      '@colliejs/transform': 1.0.56(@colliejs/config@1.0.3)(@colliejs/core@1.0.32)(@colliejs/shared@1.0.11)
       lodash: 4.17.21
     dev: false
 
